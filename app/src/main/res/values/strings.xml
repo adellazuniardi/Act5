@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LOGIN</string>
+    <string name="app_name">CONSTRAINT LAYOUT</string>
     <string name="var1">Ini Pesan</string>
     <string name="tEmail">Email</string>
     <string name="tPassword">Password</string>
@@ -9,4 +9,11 @@
     <string name="txemail">Hasil Email</string>
     <string name="txpassword">Hasil Password</string>
     <string name="label2">login Berhasil</string>
+    <string name="mDaftar">Pendaftaran</string>
+    <string name="ldaftar">Daftar</string>
+    <string name="enama">Masukkan Nama</string>
+    <string name="eemail">Masukkan Email</string>
+    <string name="epass">Masukkan Password</string>
+    <string name="erepass">Masukkan Password Kembali</string>
+    <string name="ealamat">Masukkan Alamat</string>
 </resources>
