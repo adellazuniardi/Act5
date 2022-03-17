@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.mnDaftar)
         {
          //method untuk memanggil activity "FormPendaftaran"
          Intent i = new Intent(getApplicationContext(), FormPendaftaran.class);

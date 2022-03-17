@@ -12,7 +12,8 @@
         <activity
             android:name=".FormPendaftaran"
             android:parentActivityName=".MainActivity"
-            android:label="@string/mDaftar"/>
+            android:label="@string/mDaftar"
+            android:exported="true"/>
         <activity
             android:name=".Home"
             android:exported="false"
