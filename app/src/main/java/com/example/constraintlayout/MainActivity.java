@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 nama = eemail.getText().toString();
                 password = epassword.getText().toString();
-                String email = "adel@cobamail.com";
-                String pass = "rant666";
+                String email = "adel";
+                String pass = "666";
 
                 if (nama.equals("") || password.equals("")) {
                     Toast.makeText(MainActivity.this, "User atau Password tidak boleh kosong", Toast.LENGTH_SHORT).show();
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         Bundle b = new Bundle();
                         b.putString("a", nama.trim());
                         b.putString("b",password.trim());
-                        Intent i = new Intent(getApplicationContext(), Home.class);
+                        Intent i = new Intent(getApplicationContext(), Homee.class);
                         i.putExtras(b);
                         startActivity(i);
                     }

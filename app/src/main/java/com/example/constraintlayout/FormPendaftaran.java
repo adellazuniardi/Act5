@@ -1,5 +1,6 @@
 package com.example.constraintlayout;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -16,14 +17,14 @@ public class FormPendaftaran extends AppCompatActivity {
     FloatingActionButton fab;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_pendaftaran);
 
         edtNama = findViewById(R.id.edNama);
-        edtAlamat = findViewById(R.id.eAlamat);
-        edtEmail = findViewById(R.id.edEmail);
-        edtPassword = findViewById(R.id.edPassword);
+        edtAlamat = findViewById(R.id.edAlamat);
+        edtEmail = findViewById(R.id.EdEmail);
+        edtPassword = findViewById(R.id.edPass);
         edtRepass = findViewById(R.id.edrepas);
 
         fab = findViewById(R.id.fabsimpan);
@@ -42,7 +43,7 @@ public class FormPendaftaran extends AppCompatActivity {
                 else{
                     if (edtPassword.getText().toString().equals(edtRepass.getText().toString()))
                     {
-                        Toast.makeText(getApplicationContext(), "Pendaftaran Sukses", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Pendaftaran Sukses", Toast.LENGTH_LONG).show();
                         Intent i = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(i);
                     }

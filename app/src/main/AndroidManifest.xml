@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ConstraintLayout">
         <activity
+            android:name=".LihatData"
+            android:parentActivityName=".Homee" />
+        <activity
+            android:name=".Homee"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".FormPendaftaran"
-            android:parentActivityName=".MainActivity"
+            android:exported="true"
             android:label="@string/mDaftar"
-            android:exported="true"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Home"
             android:exported="false"
